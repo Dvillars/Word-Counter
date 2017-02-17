@@ -22,6 +22,16 @@ namespace WordCounterApp
             return both;
         }
 
+        public string GetTwo()
+        {
+            return _userTwoInput;
+        }
+
+        public string GetOne()
+        {
+            return _userOneInput;
+        }
+
         public bool DoContains()
         {
             // int index = Array.IndexOf(_userOneInputSplit, _userTwoInput); , part of old code (see comment below for more details)
