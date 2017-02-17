@@ -1,11 +1,17 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-
-<form action="/result" method="post">
-  <label for='input-one'>enter your sentence</label>
-  <input type="text" name="input-one" id="input-one">
-  <label for='input-two'>enter your word</label>
-  <input type="text" name="input-two" id="input-two">
-  <button type="submit">Calc!</button>
-</form>
+<div class="row">
+  <form action="/result" method="post">
+    <div class="col-xs-6">
+      <label for='input-one'>enta yo sentence</label>
+      <input type="text" name="input-one" id="input-one">
+      <br>
+      <label for='input-two'>enta yo word</label>
+      <input type="text" name="input-two" id="input-two">
+    </div>
+    <div class="col-xs-6">
+    <button type="submit" class="btn">Count your Word</button>
+    </div>
+  </form>
+</div>
