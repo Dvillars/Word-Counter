@@ -67,5 +67,21 @@ namespace WordCounterApp
             //Assert
             Assert.Equal(resultTest, result);
         }
+
+        [Fact]
+        public void HowManyContains_HowMany_3()
+        {
+            //Arrange
+            string inputOne = "Codein' is super super cool";
+            string inputTwo = "super";
+            int resultTest = 2;
+
+            //Act
+            WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
+            int result = testWordCounter.HowManyContains();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }
