@@ -12,7 +12,7 @@
   - *output:* this is an example
   - *input2:* example
   - *output2* example
-- have the program see if the input2 is in input1, output a bool
+- have the program see if the input2 is in input1, output a Boolean
   - *input:* this is an example
   - *input2:* example
   - *output:* True
@@ -20,7 +20,7 @@
   - *input:* this is an example
   - *input2:* is
   - *output:* 2
-- finnaly with no partial word grabs
+- finally with no partial word grabs
   - *input:* this is an example
   - *input2:* is
   - *output:* 1
