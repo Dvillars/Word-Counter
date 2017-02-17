@@ -24,10 +24,11 @@ namespace WordCounterApp
 
         public bool DoContains()
         {
-            int index = Array.IndexOf(_userOneInputSplit, _userTwoInput);
+            // int index = Array.IndexOf(_userOneInputSplit, _userTwoInput); , part of old code (see comment below for more details)
             bool booli = false;
 
-            if (index > 0)
+            if (HowManyContains() > 0)
+            // if (index > 0) was replaced by ^, old still works
             {
                 booli = true;
             }
