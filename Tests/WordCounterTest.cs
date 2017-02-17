@@ -13,9 +13,11 @@ namespace WordCounterApp
             string resultTest = "this is an example, example";
 
             //Act
-            WordCounter wordCounterTest = new WordCounter(inputOne, inputTwo);
-            string result = roshamboTest.GetBoth();
+            WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
+            string result = testWordCounter.GetBoth();
 
             //Assert
             Assert.Equal(resultTest, result);
         }
+    }
+}
