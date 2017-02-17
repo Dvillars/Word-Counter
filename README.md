@@ -15,11 +15,11 @@
   - *input:* this is an example
   - *input2:* example
   - *output:* True
-- next have it count how many it can find
+- next have it find with no partial word grabs
   - *input:* this is an example
-  - *input2:* is
-  - *output:* 2
-- finally with no partial word grabs
+  - *input2:* his
+  - *output:* false
+- finally have it count how many it can find
   - *input:* this is an example
   - *input2:* is
   - *output:* 1
