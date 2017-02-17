@@ -36,6 +36,20 @@ namespace WordCounterApp
             Assert.Equal(resultTest, result);
         }
 
-        
+        [Fact]
+        public void doContains_aBool_false()
+        {
+            //Arrange
+            string inputOne = "this is an example";
+            string inputTwo = "his";
+            bool resultTest = false;
+
+            //Act
+            WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
+            bool result = testWordCounter.doContains();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
     }
 }
