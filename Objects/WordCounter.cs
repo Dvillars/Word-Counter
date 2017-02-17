@@ -22,7 +22,19 @@ namespace WordCounterApp
 
         public bool doContains()
         {
-            
+            int index = _userOneInput.IndexOf(_userTwoInput);
+            bool booli;
+
+            if (index > 0)
+            {
+                booli = true;
+            }
+            else
+            {
+                booli = false;
+            }
+
+            return booli;
         }
     }
 }

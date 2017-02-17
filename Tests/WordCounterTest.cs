@@ -26,11 +26,11 @@ namespace WordCounterApp
             //Arrange
             string inputOne = "this is an example";
             string inputTwo = "example";
-            string resultTest = true;
+            bool resultTest = true;
 
             //Act
             WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
-            string result = testWordCounter.doContains();
+            bool result = testWordCounter.doContains();
 
             //Assert
             Assert.Equal(resultTest, result);
