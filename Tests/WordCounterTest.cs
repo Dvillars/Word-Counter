@@ -69,7 +69,7 @@ namespace WordCounterApp
         }
 
         [Fact]
-        public void HowManyContains_HowMany_3()
+        public void HowManyContains_HowMany_2()
         {
             //Arrange
             string inputOne = "Codein' is super super cool";
