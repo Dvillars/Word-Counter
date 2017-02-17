@@ -7,11 +7,13 @@ namespace WordCounterApp
     {
         private string _userOneInput;
         private string _userTwoInput;
+        private string[] _userOneInputSplit;
 
         public WordCounter(string userOneInput, string userTwoInput)
         {
             _userOneInput = userOneInput;
             _userTwoInput = userTwoInput;
+            _userOneInputSplit = userOneInput.Split(' ');
         }
 
         public string GetBoth()
@@ -22,7 +24,7 @@ namespace WordCounterApp
 
         public bool DoContains()
         {
-            int index = Array.IndexOf(_userOneInput.Split(' '), _userTwoInput);
+            int index = Array.IndexOf(_userOneInputSplit, _userTwoInput);
             bool booli = false;
 
             if (index > 0)
@@ -36,10 +38,9 @@ namespace WordCounterApp
         public int HowManyContains()
         {
             int counter = 0;
-            for (int i = 0; i < _userOneInput.Split(' ').Length; i++)
+            for (int i = 0; i < _userOneInputSplit.Length; i++)
             {
-                string newThing = _userOneInput.Split(' ')[i];
-                if (newThing == _userTwoInput)
+                if (_userOneInputSplit[i] == _userTwoInput)
                 {
                     counter++;
                 }
