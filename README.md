@@ -9,9 +9,8 @@
 
 1. take inputs and record them and display them
   - *input:* this is an example
-  - *output:* this is an example
   - *input2:* example
-  - *output2* example
+  - *output* this is an example, example
 - have the program see if the input2 is in input1, output a Boolean
   - *input:* this is an example
   - *input2:* example

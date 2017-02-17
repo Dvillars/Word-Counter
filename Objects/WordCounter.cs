@@ -5,3 +5,6 @@ namespace WordcounterApp
 {
     public class Wordcounter
     {
+        
+    }
+}
