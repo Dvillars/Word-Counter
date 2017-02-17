@@ -9,8 +9,8 @@ namespace WordCounterApp
         {
             //Arrange
             string inputOne = "this is an example";
-            string inputTwo = "example";
-            string resultTest = "this is an example, example";
+            string inputTwo = "is";
+            string resultTest = "this is an example, is";
 
             //Act
             WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
@@ -21,23 +21,23 @@ namespace WordCounterApp
         }
 
         [Fact]
-        public void doContains_aBool_true()
+        public void DoContains_aBool_true()
         {
             //Arrange
             string inputOne = "this is an example";
-            string inputTwo = "example";
+            string inputTwo = "is";
             bool resultTest = true;
 
             //Act
             WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
-            bool result = testWordCounter.doContains();
+            bool result = testWordCounter.DoContains();
 
             //Assert
             Assert.Equal(resultTest, result);
         }
 
         [Fact]
-        public void doContains_aBool_false()
+        public void DoContains_aBool_false()
         {
             //Arrange
             string inputOne = "this is an example";
@@ -46,7 +46,23 @@ namespace WordCounterApp
 
             //Act
             WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
-            bool result = testWordCounter.doContains();
+            bool result = testWordCounter.DoContains();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
+
+        [Fact]
+        public void HowManyContains_HowMany_1()
+        {
+            //Arrange
+            string inputOne = "this is an example";
+            string inputTwo = "is";
+            int resultTest = 1;
+
+            //Act
+            WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
+            int result = testWordCounter.HowManyContains();
 
             //Assert
             Assert.Equal(resultTest, result);

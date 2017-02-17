@@ -20,21 +20,19 @@ namespace WordCounterApp
             return both;
         }
 
-        public bool doContains()
+        public bool DoContains()
         {
             int index = Array.IndexOf(_userOneInput.Split(' '), _userTwoInput);
-            bool booli;
+            bool booli = false;
 
             if (index > 0)
             {
                 booli = true;
             }
-            else
-            {
-                booli = false;
-            }
 
             return booli;
         }
+
+        
     }
 }
