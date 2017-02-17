@@ -22,7 +22,7 @@ namespace WordCounterApp
 
         public bool doContains()
         {
-            int index = _userOneInput.IndexOf(_userTwoInput);
+            int index = Array.IndexOf(_userOneInput.Split(' '), _userTwoInput);
             bool booli;
 
             if (index > 0)
