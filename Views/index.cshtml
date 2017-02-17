@@ -2,11 +2,10 @@
   Layout="Shared/_Layout.cshtml";
 }
 
-<form action="/count" method="post">
-  <label>enter your sentence</label>
-  <input type="text" name="cents">
-  <label>enter your word</label>
-  <input type="text" name="cents">
-
+<form action="/result" method="post">
+  <label for='input-one'>enter your sentence</label>
+  <input type="text" name="input-one" id="input-one">
+  <label for='input-two'>enter your word</label>
+  <input type="text" name="input-two" id="input-two">
   <button type="submit">Calc!</button>
 </form>

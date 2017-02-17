@@ -14,6 +14,15 @@ namespace WordCounterApp
             {
                 return View["index.cshtml"];
             };
+
+            Post["/result"] = _ =>
+            {
+                string inputOne = Request.Form["input-one"];
+                string inputTwo = Request.Form["input-two"];
+
+                WordCounter newWordCounter = new WordCounter(inputOne, inputTwo);
+                return View["result.cshtml", newWordCounter];
+            };
         }
     }
 }
