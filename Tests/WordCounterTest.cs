@@ -5,7 +5,7 @@ namespace WordCounterApp
     public class WordCounterTests
     {
         [Fact]
-        public void WinChecker_ReturnTieRock_NoWin()
+        public void GetBoth_BothWithComma_BothInput()
         {
             //Arrange
             string inputOne = "this is an example";
@@ -15,6 +15,22 @@ namespace WordCounterApp
             //Act
             WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
             string result = testWordCounter.GetBoth();
+
+            //Assert
+            Assert.Equal(resultTest, result);
+        }
+
+        [Fact]
+        public void doContains_aBool_true()
+        {
+            //Arrange
+            string inputOne = "this is an example";
+            string inputTwo = "example";
+            string resultTest = true;
+
+            //Act
+            WordCounter testWordCounter = new WordCounter(inputOne, inputTwo);
+            string result = testWordCounter.doContains();
 
             //Assert
             Assert.Equal(resultTest, result);

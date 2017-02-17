@@ -19,5 +19,10 @@ namespace WordCounterApp
             string both = _userOneInput + ", " + _userTwoInput;
             return both;
         }
+
+        public bool doContains()
+        {
+            
+        }
     }
 }
