@@ -33,6 +33,18 @@ namespace WordCounterApp
             return booli;
         }
 
-        
+        public int HowManyContains()
+        {
+            int counter = 0;
+            for (int i = 0; i < _userOneInput.Split(' ').Length; i++)
+            {
+                string newThing = _userOneInput.Split(' ')[i];
+                if (newThing == _userTwoInput)
+                {
+                    counter++;
+                }
+            }
+            return counter;
+        }
     }
 }
